@@ -7,3 +7,15 @@ D:\Code\saleforce\backend\Saleforce.Permissions.Api\Saleforce.Common.Cqrs\Salefo
 D:\Code\saleforce\backend\Saleforce.Permissions.Api\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\obj\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.AssemblyInfo.cs
 D:\Code\saleforce\backend\Saleforce.Permissions.Api\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\obj\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.dll
 D:\Code\saleforce\backend\Saleforce.Permissions.Api\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\obj\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.pdb
+D:\Code\saleforce\backend\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\bin\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.deps.json
+D:\Code\saleforce\backend\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\bin\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.dll
+D:\Code\saleforce\backend\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\bin\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.pdb
+D:\Code\saleforce\backend\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\bin\Debug\netcoreapp2.1\Saleforce.Common.dll
+D:\Code\saleforce\backend\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\bin\Debug\netcoreapp2.1\Saleforce.Common.pdb
+D:\Code\saleforce\backend\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\obj\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.csprojAssemblyReference.cache
+D:\Code\saleforce\backend\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\obj\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.csproj.CoreCompileInputs.cache
+D:\Code\saleforce\backend\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\obj\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.AssemblyInfoInputs.cache
+D:\Code\saleforce\backend\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\obj\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.AssemblyInfo.cs
+D:\Code\saleforce\backend\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\obj\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.csproj.CopyComplete
+D:\Code\saleforce\backend\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\obj\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.dll
+D:\Code\saleforce\backend\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\obj\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.pdb

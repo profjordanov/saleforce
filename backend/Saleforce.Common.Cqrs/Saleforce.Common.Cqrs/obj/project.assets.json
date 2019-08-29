@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "MediatR/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MediatR.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -207,10 +216,31 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Optional/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Optional.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Optional.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "MediatR/7.0.0": {
+      "sha512": "YGFwy3pCM13K+s3nrSDjC/wP4AYSUt7+HLtgiPPRBe2bG1joeFdOq17YZ2Y1lc4lg+m9ew0dMcQHVn5yGH7uDA==",
+      "type": "package",
+      "path": "mediatr/7.0.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net461/MediatR.dll",
+        "lib/netstandard2.0/MediatR.dll",
+        "mediatr.7.0.0.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
     "Microsoft.NETCore.App/2.1.0": {
       "sha512": "AvT774nTFgU8cYcGO9j1EMwuayKslxqYTurg32HGpWa2hEYNuW2+XgYVVNcZe6Ndbr84QX6fwaOZfd5n+1m2OA==",
       "type": "package",
@@ -680,11 +710,31 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Optional/4.0.0": {
+      "sha512": "Q9NdZ39K/tPuV8JDs6ntRxW3idN9J4jSoBK/2ovld+Gh8if4Yhs+OTPvI84mN5YGAI3pzbhLcNUrm+VFKutC3Q==",
+      "type": "package",
+      "path": "optional/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net35/Optional.dll",
+        "lib/net35/Optional.xml",
+        "lib/net45/Optional.dll",
+        "lib/net45/Optional.xml",
+        "lib/netstandard1.0/Optional.dll",
+        "lib/netstandard1.0/Optional.xml",
+        "lib/netstandard2.0/Optional.dll",
+        "lib/netstandard2.0/Optional.xml",
+        "optional.4.0.0.nupkg.sha512",
+        "optional.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "MediatR >= 7.0.0",
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Optional >= 4.0.0"
     ]
   },
   "packageFolders": {
@@ -694,11 +744,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Code\\saleforce\\backend\\Saleforce.Permissions.Api\\Saleforce.Common.Cqrs\\Saleforce.Common.Cqrs\\Saleforce.Common.Cqrs.csproj",
+      "projectUniqueName": "D:\\Code\\saleforce\\backend\\Saleforce.Common.Cqrs\\Saleforce.Common.Cqrs\\Saleforce.Common.Cqrs.csproj",
       "projectName": "Saleforce.Common.Cqrs",
-      "projectPath": "D:\\Code\\saleforce\\backend\\Saleforce.Permissions.Api\\Saleforce.Common.Cqrs\\Saleforce.Common.Cqrs\\Saleforce.Common.Cqrs.csproj",
+      "projectPath": "D:\\Code\\saleforce\\backend\\Saleforce.Common.Cqrs\\Saleforce.Common.Cqrs\\Saleforce.Common.Cqrs.csproj",
       "packagesPath": "C:\\Users\\Jordan\\.nuget\\packages\\",
-      "outputPath": "D:\\Code\\saleforce\\backend\\Saleforce.Permissions.Api\\Saleforce.Common.Cqrs\\Saleforce.Common.Cqrs\\obj\\",
+      "outputPath": "D:\\Code\\saleforce\\backend\\Saleforce.Common.Cqrs\\Saleforce.Common.Cqrs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -728,11 +778,19 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "MediatR": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "Optional": {
+            "target": "Package",
+            "version": "[4.0.0, )"
           }
         },
         "imports": [

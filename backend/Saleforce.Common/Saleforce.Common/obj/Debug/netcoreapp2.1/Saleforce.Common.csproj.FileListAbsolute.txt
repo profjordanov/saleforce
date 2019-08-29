@@ -4,3 +4,6 @@ D:\Code\saleforce\backend\Saleforce.Common\Saleforce.Common\obj\Debug\netcoreapp
 D:\Code\saleforce\backend\Saleforce.Common\Saleforce.Common\obj\Debug\netcoreapp2.1\Saleforce.Common.csproj.CoreCompileInputs.cache
 D:\Code\saleforce\backend\Saleforce.Common\Saleforce.Common\obj\Debug\netcoreapp2.1\Saleforce.Common.AssemblyInfoInputs.cache
 D:\Code\saleforce\backend\Saleforce.Common\Saleforce.Common\obj\Debug\netcoreapp2.1\Saleforce.Common.AssemblyInfo.cs
+D:\Code\saleforce\backend\Saleforce.Common\Saleforce.Common\bin\Debug\netcoreapp2.1\Saleforce.Common.pdb
+D:\Code\saleforce\backend\Saleforce.Common\Saleforce.Common\obj\Debug\netcoreapp2.1\Saleforce.Common.dll
+D:\Code\saleforce\backend\Saleforce.Common\Saleforce.Common\obj\Debug\netcoreapp2.1\Saleforce.Common.pdb
