@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Saleforce.Permissions.Api", "Saleforce.Permissions.Api\Saleforce.Permissions.Api.csproj", "{14080754-18D6-4E8B-A78D-86ABE4AF69BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14080754-18D6-4E8B-A78D-86ABE4AF69BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14080754-18D6-4E8B-A78D-86ABE4AF69BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14080754-18D6-4E8B-A78D-86ABE4AF69BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14080754-18D6-4E8B-A78D-86ABE4AF69BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1DC705B-70C4-400C-B790-56B2A9959977}
+	EndGlobalSection
+EndGlobal
