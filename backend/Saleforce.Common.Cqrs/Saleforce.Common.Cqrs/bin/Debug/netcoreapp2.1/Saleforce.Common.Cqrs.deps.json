@@ -1,0 +1,55 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "b34f58510737c5bdb8e89738b65d306447523555"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "Saleforce.Common.Cqrs/1.0.0": {
+        "dependencies": {
+          "MediatR": "7.0.0",
+          "Saleforce.Common": "1.0.0.0"
+        },
+        "runtime": {
+          "Saleforce.Common.Cqrs.dll": {}
+        }
+      },
+      "MediatR/7.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/MediatR.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
+        }
+      },
+      "Saleforce.Common/1.0.0.0": {
+        "runtime": {
+          "Saleforce.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Saleforce.Common.Cqrs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MediatR/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YGFwy3pCM13K+s3nrSDjC/wP4AYSUt7+HLtgiPPRBe2bG1joeFdOq17YZ2Y1lc4lg+m9ew0dMcQHVn5yGH7uDA==",
+      "path": "mediatr/7.0.0",
+      "hashPath": "mediatr.7.0.0.nupkg.sha512"
+    },
+    "Saleforce.Common/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
