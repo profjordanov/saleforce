@@ -1,8 +1,10 @@
-﻿using System;
+﻿using FluentValidation;
+using Optional;
+using Optional.Extensions;
+using System;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using FluentValidation;
-using Optional;
 using Saleforce.Common.Cqrs.Core;
 
 namespace Saleforce.Common.Cqrs.Business
@@ -24,5 +26,19 @@ namespace Saleforce.Common.Cqrs.Business
         {
             throw new System.NotImplementedException();
         }
+
+        protected Option<TCommand, Error> ValidateCommand(TCommand command)
+        {
+            var validationResult = Validator.Validate(command);
+
+            return validationResult
+                .SomeWhen(
+                    r => r.IsValid,
+                    r => Error.Validation(r.Errors.Select(e => e.ErrorMessage)))
+
+                // If the validation result is successful, disregard it and simply return the command
+                .Map(_ => command);
+        }
+
     }
 }
