@@ -1,3 +1,0 @@
-C:\Users\yoyordan\Documents\GitHub\saleforce\backend\Saleforce.Deliveries.Api\Saleforce.Deliveries.Api\obj\Debug\netcoreapp2.2\Saleforce.Deliveries.Api.csproj.CoreCompileInputs.cache
-C:\Users\yoyordan\Documents\GitHub\saleforce\backend\Saleforce.Deliveries.Api\Saleforce.Deliveries.Api\obj\Debug\netcoreapp2.2\Saleforce.Deliveries.Api.AssemblyInfoInputs.cache
-C:\Users\yoyordan\Documents\GitHub\saleforce\backend\Saleforce.Deliveries.Api\Saleforce.Deliveries.Api\obj\Debug\netcoreapp2.2\Saleforce.Deliveries.Api.AssemblyInfo.cs

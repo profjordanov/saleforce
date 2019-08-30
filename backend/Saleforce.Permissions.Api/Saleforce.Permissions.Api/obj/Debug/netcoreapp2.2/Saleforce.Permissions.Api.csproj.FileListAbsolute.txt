@@ -1,3 +1,0 @@
-C:\Users\yoyordan\Documents\GitHub\saleforce\backend\Saleforce.Permissions.Api\Saleforce.Permissions.Api\obj\Debug\netcoreapp2.2\Saleforce.Permissions.Api.csproj.CoreCompileInputs.cache
-C:\Users\yoyordan\Documents\GitHub\saleforce\backend\Saleforce.Permissions.Api\Saleforce.Permissions.Api\obj\Debug\netcoreapp2.2\Saleforce.Permissions.Api.AssemblyInfoInputs.cache
-C:\Users\yoyordan\Documents\GitHub\saleforce\backend\Saleforce.Permissions.Api\Saleforce.Permissions.Api\obj\Debug\netcoreapp2.2\Saleforce.Permissions.Api.AssemblyInfo.cs
