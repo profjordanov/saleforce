@@ -5,14 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
     <PackageReference Include="FluentValidation" Version="8.4.0" />
     <PackageReference Include="MediatR" Version="7.0.0" />
     <PackageReference Include="Optional" Version="4.0.0" />
+    <PackageReference Include="Optional.Async" Version="1.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Saleforce.Common">
       <HintPath>..\..\Saleforce.Common\Saleforce.Common\obj\Debug\netcoreapp2.1\Saleforce.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Saleforce.Common.EventSourcing">
+      <HintPath>..\..\Saleforce.Common.EventSourcing\Saleforce.Common.EventSourcing\bin\Debug\netcoreapp2.1\Saleforce.Common.EventSourcing.dll</HintPath>
     </Reference>
   </ItemGroup>
 
