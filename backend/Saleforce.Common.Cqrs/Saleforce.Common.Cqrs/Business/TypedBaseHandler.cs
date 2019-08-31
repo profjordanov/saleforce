@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using Optional;
-using Optional.Extensions;
+using Optional.Async;
 using System;
 using System.Linq;
 using System.Threading;
@@ -12,33 +12,18 @@ namespace Saleforce.Common.Cqrs.Business
     public abstract class TypedBaseHandler<TCommand, TResult> : ICommandHandler<TCommand, TResult>
         where TCommand : ICommand<TResult>
     {
-        protected TypedBaseHandler(IValidator<TCommand> validator)
+        protected TypedBaseHandler(ICommandValidator<TCommand> validator)
         {
-            Validator = validator ??
-                        throw new InvalidOperationException(
-                            "Tried to instantiate a command handler without a validator." +
-                            "Did you forget to add one?");
+            CommandValidator = validator;
         }
 
-        protected IValidator<TCommand> Validator { get; }
+        protected ICommandValidator<TCommand> CommandValidator { get; }
 
-        public Task<Option<TResult, Error>> Handle(TCommand request, CancellationToken cancellationToken)
-        {
-            throw new System.NotImplementedException();
-        }
+        public Task<Option<TResult, Error>> Handle(TCommand request, CancellationToken cancellationToken) =>
+            CommandValidator.Validate(request)
+                .FlatMapAsync(command => ValidHandle(command, cancellationToken));
 
-        protected Option<TCommand, Error> ValidateCommand(TCommand command)
-        {
-            var validationResult = Validator.Validate(command);
-
-            return validationResult
-                .SomeWhen(
-                    r => r.IsValid,
-                    r => Error.Validation(r.Errors.Select(e => e.ErrorMessage)))
-
-                // If the validation result is successful, disregard it and simply return the command
-                .Map(_ => command);
-        }
-
+        public abstract Task<Option<TResult, Error>> ValidHandle(
+            TCommand command, CancellationToken cancellationToken);
     }
 }

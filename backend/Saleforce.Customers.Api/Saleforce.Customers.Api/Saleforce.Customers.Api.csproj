@@ -13,4 +13,21 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.7.12" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Events\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Saleforce.Common">
+      <HintPath>..\..\Saleforce.Common\Saleforce.Common\obj\Debug\netcoreapp2.1\Saleforce.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Saleforce.Common.EventSourcing">
+      <HintPath>..\..\Saleforce.Common.EventSourcing\Saleforce.Common.EventSourcing\bin\Debug\netcoreapp2.1\Saleforce.Common.EventSourcing.dll</HintPath>
+    </Reference>
+    <Reference Include="Saleforce.Common.Hateoas">
+      <HintPath>..\..\Saleforce.Common.Hateoas\Saleforce.Common.Hateoas\obj\Debug\netcoreapp2.1\Saleforce.Common.Hateoas.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
