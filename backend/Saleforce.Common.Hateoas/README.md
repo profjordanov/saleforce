@@ -1,0 +1,1 @@
+Hypermedia as the Engine of Application State (HATEOAS) gives full control of which links to apply to models returned from your api. In order to communicate varying state to the end-user, this library fully integrates with Authorization, and allows arbitrary conditions to determine whether to show or hide HATEOAS links between api resources.
