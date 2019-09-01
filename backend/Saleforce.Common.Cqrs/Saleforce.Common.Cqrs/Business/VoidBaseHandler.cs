@@ -4,15 +4,19 @@ using MediatR;
 using Optional;
 using Optional.Async;
 using Saleforce.Common.Cqrs.Core;
+using Saleforce.Common.EventSourcing.Core;
 
 namespace Saleforce.Common.Cqrs.Business
 {
-    public abstract class VoidBaseHandler<TCommand> : ICommandHandler<TCommand>
+    public abstract class VoidBaseHandler<TCommand> : BaseHandler, ICommandHandler<TCommand>
         where TCommand : ICommand
     {
-        protected VoidBaseHandler(ICommandValidator<TCommand> validator)
+        protected VoidBaseHandler(
+            IEventBus eventBus,
+            ICommandValidator<TCommand> commandValidator)
+            : base(eventBus)
         {
-            CommandValidator = validator;
+            CommandValidator = commandValidator;
         }
 
         protected ICommandValidator<TCommand> CommandValidator { get; }
