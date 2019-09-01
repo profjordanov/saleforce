@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Optional" Version="4.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Saleforce.Common">
+      <HintPath>..\..\Saleforce.Common\Saleforce.Common\obj\Debug\netcoreapp2.1\Saleforce.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Saleforce.Common.Cqrs">
+      <HintPath>..\..\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\obj\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.dll</HintPath>
+    </Reference>
+    <Reference Include="Saleforce.Common.Hateoas">
+      <HintPath>..\..\Saleforce.Common.Hateoas\Saleforce.Common.Hateoas\obj\Debug\netcoreapp2.1\Saleforce.Common.Hateoas.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

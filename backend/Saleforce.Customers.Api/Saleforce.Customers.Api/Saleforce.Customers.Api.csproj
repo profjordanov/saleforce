@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
@@ -28,6 +28,9 @@
   <ItemGroup>
     <Reference Include="Saleforce.Common">
       <HintPath>..\..\Saleforce.Common\Saleforce.Common\obj\Debug\netcoreapp2.1\Saleforce.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Saleforce.Common.Api">
+      <HintPath>..\..\Saleforce.Common.Api\Saleforce.Common.Api\obj\Debug\netcoreapp2.1\Saleforce.Common.Api.dll</HintPath>
     </Reference>
     <Reference Include="Saleforce.Common.Cqrs">
       <HintPath>..\..\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\obj\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.dll</HintPath>
