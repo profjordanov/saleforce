@@ -8,10 +8,48 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="FluentValidation" Version="8.4.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.4.0" />
+    <PackageReference Include="Marten" Version="3.7.0" />
+    <PackageReference Include="MediatR" Version="7.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.7.12" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.0" />
+    <PackageReference Include="Optional" Version="4.0.0" />
+    <PackageReference Include="Optional.Async" Version="1.3.0" />
+    <PackageReference Include="RiskFirst.Hateoas" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Saleforce.Common">
+      <HintPath>..\..\Saleforce.Common\Saleforce.Common\bin\Debug\netcoreapp2.1\Saleforce.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Saleforce.Common.Api">
+      <HintPath>..\..\Saleforce.Common.Api\Saleforce.Common.Api\obj\Debug\netcoreapp2.1\Saleforce.Common.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Saleforce.Common.Cqrs">
+      <HintPath>..\..\Saleforce.Common.Cqrs\Saleforce.Common.Cqrs\obj\Debug\netcoreapp2.1\Saleforce.Common.Cqrs.dll</HintPath>
+    </Reference>
+    <Reference Include="Saleforce.Common.EventSourcing">
+      <HintPath>..\..\Saleforce.Common.EventSourcing\Saleforce.Common.EventSourcing\obj\Debug\netcoreapp2.1\Saleforce.Common.EventSourcing.dll</HintPath>
+    </Reference>
+    <Reference Include="Saleforce.Common.Hateoas">
+      <HintPath>..\..\Saleforce.Common.Hateoas\Saleforce.Common.Hateoas\obj\Debug\netcoreapp2.1\Saleforce.Common.Hateoas.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Configuration\configuration.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Configuration\role.rules.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

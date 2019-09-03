@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using AutoMapper;
+using FluentValidation.AspNetCore;
+using MediatR;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -21,7 +24,25 @@ namespace Saleforce.Permissions.Api
         {
             services.AddDbContext(Configuration.GetConnectionString("DefaultConnection"));
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddAutoMapper(typeof(Startup).Assembly);
+
+            services.AddHateoas();
+
+            services.AddEventSourcing(Configuration);
+
+            services.AddMediatR(typeof(Startup).Assembly);
+
+            services.AddRepositories();
+
+            services.AddMemoryCache();
+
+            services
+                .AddMvc()
+                .AddFluentValidation(configuration =>
+                {
+                    //configuration.RegisterValidatorsFromAssemblyContaining<>();
+                })
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
