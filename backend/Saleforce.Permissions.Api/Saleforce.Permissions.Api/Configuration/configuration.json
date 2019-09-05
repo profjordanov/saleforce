@@ -1,0 +1,298 @@
+[
+  {
+    "countryId": "DE",
+    "connector": "EUHCC",
+    "distibutionChannels": [ "01" ],
+    "orgUnits": [
+      {
+        "orgUnitId": "0093",
+        "orgUnitName": "0093"
+      }
+    ],
+    "businessLines": [
+      {
+        "businessLine": "AGG",
+        "businessLineName": "Aggregates",
+        "businessLineIds": [
+          "60",
+          "91",
+          "99"
+        ]
+      },
+      {
+        "businessLine": "CEM",
+        "businessLineName": "Cement",
+        "businessLineIds": [
+          "10",
+          "91",
+          "99"
+        ]
+      },
+      {
+        "businessLine": "RMC",
+        "businessLineName": "Ready-mix concrete",
+        "businessLineIds": [
+          "30",
+          "31",
+          "91",
+          "99"
+        ]
+      }
+    ]
+  },
+  {
+    "countryId": "AU",
+    "connector": "AUNWG",
+    "orgUnits": [
+      {
+        "orgUnitId": "026",
+        "orgUnitName": "Hanson"
+      },
+      {
+        "orgUnitId": "235",
+        "orgUnitName": "Hymix"
+      }
+    ],
+    "businessLines": [
+      {
+        "businessLine": "AGG",
+        "businessLineName": "Aggregates",
+        "businessLineIds": [
+          "20",
+          "00"
+        ]
+      },
+      {
+        "businessLine": "ASPHALT",
+        "businessLineName": "Asphalt",
+        "businessLineIds": [
+          "30",
+          "00"
+        ]
+      },
+      {
+        "businessLine": "CEM",
+        "businessLineName": "Cement",
+        "businessLineIds": [
+          "80",
+          "00"
+        ]
+      },
+      {
+        "businessLine": "RMC",
+        "businessLineName": "Ready-mix concrete",
+        "businessLineIds": [
+          "10",
+          "00"
+        ]
+      }
+    ]
+  },
+  {
+    "countryId": "US2",
+    "connector": "NAMNWG",
+    "orgUnits": [
+      {
+        "orgUnitId": "US10",
+        "orgUnitName": "Lehigh Han CEM South"
+      },
+      {
+        "orgUnitId": "US12",
+        "orgUnitName": "Hanson Perm. Cem. GU"
+      },
+      {
+        "orgUnitId": "US14",
+        "orgUnitName": "Lehigh Southwest Cem"
+      },
+      {
+        "orgUnitId": "US16",
+        "orgUnitName": "Hanson Micronesia"
+      },
+      {
+        "orgUnitId": "US18",
+        "orgUnitName": "Lehigh Cem. Com. LLC"
+      },
+      {
+        "orgUnitId": "US63",
+        "orgUnitName": "Hanson AGG S-EastLLC"
+      },
+      {
+        "orgUnitId": "US74",
+        "orgUnitName": "Mission Valley Rock"
+      }
+    ],
+    "businessLines": [
+      {
+        "businessLine": "AGG",
+        "businessLineName": "Aggregates",
+        "businessLineIds": [
+          "60",
+          "99"
+        ]
+      },
+      {
+        "businessLine": "CEM",
+        "businessLineName": "Cement",
+        "businessLineIds": [
+          "10",
+          "99"
+        ]
+      },
+      {
+        "businessLine": "RMC",
+        "businessLineName": "Ready-mix concrete",
+        "businessLineIds": []
+      }
+    ]
+  },
+  {
+    "countryId": "US",
+    "connector": "NAMHCC",
+    "orgUnits": [
+      {
+        "orgUnitId": "US10",
+        "orgUnitName": "Lehigh Han CEM South"
+      },
+      {
+        "orgUnitId": "US12",
+        "orgUnitName": "Hanson Perm. Cem. GU"
+      },
+      {
+        "orgUnitId": "US14",
+        "orgUnitName": "Lehigh Southwest Cem"
+      },
+      {
+        "orgUnitId": "US16",
+        "orgUnitName": "Hanson Micronesia"
+      },
+      {
+        "orgUnitId": "US18",
+        "orgUnitName": "Lehigh Cem. Com. LLC"
+      },
+      {
+        "orgUnitId": "US63",
+        "orgUnitName": "Hanson AGG S-EastLLC"
+      },
+      {
+        "orgUnitId": "US74",
+        "orgUnitName": "Mission Valley Rock"
+      }
+    ],
+    "businessLines": [
+      {
+        "businessLine": "AGG",
+        "businessLineName": "Aggregates",
+        "businessLineIds": [
+          "60",
+          "99"
+        ]
+      },
+      {
+        "businessLine": "CEM",
+        "businessLineName": "Cement",
+        "businessLineIds": [
+          "10",
+          "99"
+        ]
+      },
+      {
+        "businessLine": "RMC",
+        "businessLineName": "Ready-mix concrete",
+        "businessLineIds": []
+      }
+    ]
+  },
+  {
+    "countryId": "BE",
+    "orgUnits": [],
+    "businessLines": [
+      {
+        "businessLine": "AGG",
+        "businessLineName": "Aggregates",
+        "businessLineIds": []
+      },
+      {
+        "businessLine": "ASPHALT",
+        "businessLineName": "Asphalt",
+        "businessLineIds": []
+      },
+      {
+        "businessLine": "CEM",
+        "businessLineName": "Cement",
+        "businessLineIds": []
+      },
+      {
+        "businessLine": "RMC",
+        "businessLineName": "Ready-mix concrete",
+        "businessLineIds": []
+      }
+    ]
+  },
+  {
+    "countryId": "NL",
+    "orgUnits": [],
+    "businessLines": [
+      {
+        "businessLine": "AGG",
+        "businessLineName": "Aggregates",
+        "businessLineIds": []
+      },
+      {
+        "businessLine": "ASPHALT",
+        "businessLineName": "Asphalt",
+        "businessLineIds": []
+      },
+      {
+        "businessLine": "CEM",
+        "businessLineName": "Cement",
+        "businessLineIds": []
+      },
+      {
+        "businessLine": "RMC",
+        "businessLineName": "Ready-mix concrete",
+        "businessLineIds": []
+      }
+    ]
+  },
+  {
+    "countryId": "mock",
+    "connector": "MOCK",
+    "distibutionChannels": [ "01" ],
+    "orgUnits": [
+      {
+        "orgUnitId": "0093",
+        "orgUnitName": "0093"
+      }
+    ],
+    "businessLines": [
+      {
+        "businessLine": "AGG",
+        "businessLineName": "Aggregates",
+        "businessLineIds": [
+          "60",
+          "91",
+          "99"
+        ]
+      },
+      {
+        "businessLine": "CEM",
+        "businessLineName": "Cement",
+        "businessLineIds": [
+          "10",
+          "91",
+          "99"
+        ]
+      },
+      {
+        "businessLine": "RMC",
+        "businessLineName": "Ready-mix concrete",
+        "businessLineIds": [
+          "30",
+          "31",
+          "91",
+          "99"
+        ]
+      }
+    ]
+  }
+]

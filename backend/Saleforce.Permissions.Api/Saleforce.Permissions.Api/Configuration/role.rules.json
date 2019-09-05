@@ -1,0 +1,1508 @@
+{
+  "Roles": [
+    {
+      "roleType": "FINISHER",
+      "definition": {
+        "isInternal": false,
+        "canAssignRoles": [],
+        "dataScopes": [
+          {
+            "dataScope": "countryId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "orgUnitId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "businessLine",
+            "isRequired": true,
+            "mapTo": "businessLineId"
+          },
+          {
+            "dataScope": "customerIds",
+            "isRequired": true,
+            "multiSelect": true,
+            "mapTo": "customerId"
+          },
+          {
+            "dataScope": "projectId",
+            "isRequired": false
+          },
+          {
+            "dataScope": "siteId",
+            "isRequired": false
+          },
+          {
+            "dataScope": "orderId",
+            "isRequired": false
+          }
+        ],
+        "permissionGenerationRules": [
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "businessLine"
+              },
+              {
+                "dataScope": "customerIds",
+                "multiSelect": false
+              },
+              {
+                "dataScope": "projectId"
+              },
+              {
+                "dataScope": "siteId"
+              },
+              {
+                "dataScope": "orderId"
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ORDERS_DELIVERIES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "projectId",
+                  "siteId",
+                  "orderId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_PROJECTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "projectId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_SITES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "siteId"
+                ]
+              }
+            ]
+          },
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "businessLine",
+                "mapTo": "businessLineId"
+              },
+              {
+                "dataScope": "customerIds",
+                "multiSelect": false
+              },
+              {
+                "dataScope": "projectId"
+              },
+              {
+                "dataScope": "orderId"
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ORDERS_DELIVERIES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "projectId",
+                  "orderId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_PROJECTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "projectId"
+                ]
+              }
+            ]
+          },
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "businessLine",
+                "mapTo": "businessLineId"
+              },
+              {
+                "dataScope": "customerIds",
+                "multiSelect": false
+              },
+              {
+                "dataScope": "siteId"
+              },
+              {
+                "dataScope": "orderId"
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ORDERS_DELIVERIES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "siteId",
+                  "orderId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_SITES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "siteId"
+                ]
+              }
+            ]
+          },
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "businessLine",
+                "mapTo": "businessLineId"
+              },
+              {
+                "dataScope": "customerIds",
+                "multiSelect": false
+              },
+              {
+                "dataScope": "projectId"
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ORDERS_DELIVERIES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "projectId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_PROJECTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "projectId"
+                ]
+              }
+            ]
+          },
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "businessLine",
+                "mapTo": "businessLineId"
+              },
+              {
+                "dataScope": "customerIds",
+                "multiSelect": false
+              },
+              {
+                "dataScope": "siteId"
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ORDERS_DELIVERIES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "siteId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_SITES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "siteId"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "roleType": "SUPERINTEDENT",
+      "definition": {
+        "isInternal": false,
+        "canAssignRoles": [],
+        "dataScopes": [
+          {
+            "dataScope": "countryId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "orgUnitId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "businessLine",
+            "isRequired": true,
+            "mapTo": "businessLineId"
+          },
+          {
+            "dataScope": "customerIds",
+            "isRequired": true,
+            "multiSelect": true,
+            "mapTo": "customerId"
+          },
+          {
+            "dataScope": "projectId",
+            "isRequired": false
+          },
+          {
+            "dataScope": "siteId",
+            "isRequired": false
+          }
+        ],
+        "permissionGenerationRules": [
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "businessLine"
+              },
+              {
+                "dataScope": "customerIds",
+                "multiSelect": true
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ORDERS_DELIVERIES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_PROJECTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_SITES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              }
+            ]
+          },
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "businessLine",
+                "mapTo": "businessLineId"
+              },
+              {
+                "dataScope": "customerIds",
+                "multiSelect": false,
+                "mapTo": "customerId"
+              },
+              {
+                "dataScope": "projectId"
+              },
+              {
+                "dataScope": "siteId"
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ORDERS_DELIVERIES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "projectId",
+                  "siteId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_PROJECTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "projectId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_SITES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "siteId"
+                ]
+              }
+            ]
+          },
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "businessLine",
+                "mapTo": "businessLineId"
+              },
+              {
+                "dataScope": "customerIds",
+                "multiSelect": false,
+                "mapTo": "customerId"
+              },
+              {
+                "dataScope": "projectId"
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ORDERS_DELIVERIES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "projectId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_PROJECTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "projectId"
+                ]
+              }
+            ]
+          },
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "businessLine",
+                "mapTo": "businessLineId"
+              },
+              {
+                "dataScope": "customerIds",
+                "multiSelect": false,
+                "mapTo": "customerId"
+              },
+              {
+                "dataScope": "siteId"
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ORDERS_DELIVERIES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "siteId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_SITES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId",
+                  "siteId"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "roleType": "GLOBAL_ADMIN",
+      "definition": {
+        "isInternal": true,
+        "canAssignRoles": [
+          "GLOBAL_ADMIN",
+          "SUPER_ADMIN",
+          "SALES_AGENT",
+          "DISPATCHER",
+          "SUPERINTEDENT",
+          "FINISHER"
+        ],
+        "dataScopes": [
+          {
+            "dataScope": "countryId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "orgUnitId",
+            "isRequired": false
+          }
+        ],
+        "permissionGenerationRules": [
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ALL_DATA",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_FINANCE",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_CUSTOMERS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_USERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "DELETE_USERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "CHANGE_USERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "ASSIGN_ROLES",
+                "dataScope": [
+                  "countryId"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "roleType": "SUPER_ADMIN",
+      "definition": {
+        "isInternal": true,
+        "canAssignRoles": [
+          "SUPER_ADMIN",
+          "SALES_AGENT",
+          "DISPATCHER",
+          "SUPERINTEDENT",
+          "FINISHER"
+        ],
+        "dataScopes": [
+          {
+            "dataScope": "countryId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "orgUnitId",
+            "isRequired": true
+          }
+        ],
+        "permissionGenerationRules": [
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ALL_DATA",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_FINANCE",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_CUSTOMERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_USERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "DELETE_USERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "CHANGE_USERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "ASSIGN_ROLES",
+                "dataScope": [
+                  "countryId"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "roleType": "SALES_AGENT",
+      "definition": {
+        "isInternal": true,
+        "canAssignRoles": [
+          "SUPERINTEDENT",
+          "FINISHER"
+        ],
+        "dataScopes": [
+          {
+            "dataScope": "countryId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "orgUnitId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "businessLine",
+            "isRequired": false,
+            "mapTo": "businessLineId"
+          },
+          {
+            "dataScope": "customerIds",
+            "multiSelect": true,
+            "isRequired": false,
+            "mapTo": "customerId"
+          }
+        ],
+        "permissionGenerationRules": [
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "businessLine"
+              },
+              {
+                "dataScope": "customerIds",
+                "multiSelect": true
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ORDERS_DELIVERIES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_PROJECTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_SITES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_FINANCE",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_CUSTOMERS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_USERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "DELETE_USERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "CHANGE_USERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "ASSIGN_ROLES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              }
+            ]
+          },
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "businessLine"
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ORDERS_DELIVERIES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_PROJECTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_SITES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_FINANCE",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_CUSTOMERS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_USERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "DELETE_USERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "CHANGE_USERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "ASSIGN_ROLES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId"
+                ]
+              }
+            ]
+          },
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ALL_DATA",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_FINANCE",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_CUSTOMERS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_USERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "DELETE_USERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "CHANGE_USERS",
+                "dataScope": [
+                  "countryId"
+                ]
+              },
+              {
+                "permissionType": "ASSIGN_ROLES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "roleType": "DISPATCHER",
+      "definition": {
+        "isInternal": true,
+        "canAssignRoles": [],
+        "dataScopes": [
+          {
+            "dataScope": "countryId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "orgUnitId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "dispatchGroupId",
+            "isRequired": true
+          }
+        ],
+        "permissionGenerationRules": [
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "dispatchGroupId"
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ORDERS_DELIVERIES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "dispatchGroupId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_PLANTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "dispatchGroupId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_SITES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "dispatchGroupId"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "roleType": "PLANT_MANAGER",
+      "definition": {
+        "isInternal": false,
+        "canAssignRoles": [
+          "CUSTOMER_ADMIN",
+          "PLANT_MANAGER",
+          "ACCOUNTANT",
+          "QA_ENGINEER"
+        ],
+        "dataScopes": [
+          {
+            "dataScope": "countryId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "orgUnitId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "businessLine",
+            "isRequired": true,
+            "mapTo": "businessLineId"
+          },
+          {
+            "dataScope": "customerIds",
+            "multiSelect": true,
+            "isRequired": true,
+            "mapTo": "customerId"
+          }
+        ],
+        "permissionGenerationRules": [
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "businessLine"
+              },
+              {
+                "dataScope": "customerIds",
+                "multiSelect": true
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ORDERS_DELIVERIES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_PROJECTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_SITES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_INVOICES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_FINANCE",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_MATERIALCERTIFICATES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_TESTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "CHANGE_TESTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "ACCESS_PRODUCT_HUB",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_CUSTOMERS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_USERS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "CHANGE_USERS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "ASSIGN_ROLES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "roleType": "CUSTOMER_ADMIN",
+      "definition": {
+        "isInternal": false,
+        "canAssignRoles": [
+          "CUSTOMER_ADMIN",
+          "PLANT_MANAGER",
+          "ACCOUNTANT",
+          "QA_ENGINEER"
+        ],
+        "dataScopes": [
+          {
+            "dataScope": "countryId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "orgUnitId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "businessLine",
+            "isRequired": true,
+            "mapTo": "businessLineId"
+          },
+          {
+            "dataScope": "customerIds",
+            "multiSelect": true,
+            "isRequired": true,
+            "mapTo": "customerId"
+          }
+        ],
+        "permissionGenerationRules": [
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "businessLine"
+              },
+              {
+                "dataScope": "customerIds",
+                "multiSelect": true
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_PROJECTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_SITES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_CUSTOMERS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_USERS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "CHANGE_USERS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "ASSIGN_ROLES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "roleType": "ACCOUNTANT",
+      "definition": {
+        "isInternal": false,
+        "canAssignRoles": [],
+        "dataScopes": [
+          {
+            "dataScope": "countryId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "orgUnitId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "businessLine",
+            "isRequired": true,
+            "mapTo": "businessLineId"
+          },
+          {
+            "dataScope": "customerIds",
+            "multiSelect": true,
+            "isRequired": true,
+            "mapTo": "customerId"
+          }
+        ],
+        "permissionGenerationRules": [
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "businessLine"
+              },
+              {
+                "dataScope": "customerIds",
+                "multiSelect": true
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ORDERS_DELIVERIES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_FINANCE",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_INVOICES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "CHANGE_INVOICES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_PROJECTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_SITES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "ACCESS_PRODUCT_HUB",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "roleType": "QA_ENGINEER",
+      "definition": {
+        "isInternal": false,
+        "canAssignRoles": [],
+        "dataScopes": [
+          {
+            "dataScope": "countryId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "orgUnitId",
+            "isRequired": true
+          },
+          {
+            "dataScope": "businessLine",
+            "isRequired": true,
+            "mapTo": "businessLineId"
+          },
+          {
+            "dataScope": "customerIds",
+            "multiSelect": true,
+            "isRequired": true,
+            "mapTo": "customerId"
+          }
+        ],
+        "permissionGenerationRules": [
+          {
+            "roledataScope": [
+              {
+                "dataScope": "countryId"
+              },
+              {
+                "dataScope": "orgUnitId"
+              },
+              {
+                "dataScope": "businessLine"
+              },
+              {
+                "dataScope": "customerIds",
+                "multiSelect": true
+              }
+            ],
+            "permissions": [
+              {
+                "permissionType": "VIEW_ORDERS_DELIVERIES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_MATERIALCERTIFICATES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_TESTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "CHANGE_TESTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_PROJECTS",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "VIEW_SITES",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              },
+              {
+                "permissionType": "ACCESS_PRODUCT_HUB",
+                "dataScope": [
+                  "countryId",
+                  "orgUnitId",
+                  "businessLineId",
+                  "customerId"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

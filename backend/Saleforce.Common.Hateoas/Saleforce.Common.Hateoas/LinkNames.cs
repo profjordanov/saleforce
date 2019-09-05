@@ -18,7 +18,15 @@
             public const string RegisterCustomer = "register-customer";
             public const string UpdateRegisteredCustomer = "update-registered-customer";
             public const string DeleteCustomer = "delete-customer";
+        }
 
+        public static class Permissions
+        {
+            public const string GetRoleByUserId = "get-role-by-user";
+            public const string GetRoleById = "get-role-by-id";
+            public const string AssignRoleToUser = "assign-role-to-user";
+            public const string UpdateRoleAssignment = "update-role-assignment";
+            public const string DeleteRoleAssignment = "delete-role";
         }
     }
 }

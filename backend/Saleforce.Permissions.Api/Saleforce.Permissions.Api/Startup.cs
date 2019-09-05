@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AutoMapper;
+using FluentValidation.AspNetCore;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using Saleforce.Permissions.Api.Configuration;
 
 namespace Saleforce.Permissions.Api
 {
@@ -25,7 +22,27 @@ namespace Saleforce.Permissions.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddDbContext(Configuration.GetConnectionString("DefaultConnection"));
+
+            services.AddAutoMapper(typeof(Startup).Assembly);
+
+            services.AddHateoas();
+
+            services.AddEventSourcing(Configuration);
+
+            services.AddMediatR(typeof(Startup).Assembly);
+
+            services.AddRepositories();
+
+            services.AddMemoryCache();
+
+            services
+                .AddMvc()
+                .AddFluentValidation(configuration =>
+                {
+                    //configuration.RegisterValidatorsFromAssemblyContaining<>();
+                })
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
