@@ -15,6 +15,7 @@ namespace Saleforce.ApiGateway
             WebHost
                 .CreateDefaultBuilder(args)
                 .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseStartup<Startup>();
+                .UseStartup<Startup>()
+                .UseUrls("https://*:9000");
     }
 }

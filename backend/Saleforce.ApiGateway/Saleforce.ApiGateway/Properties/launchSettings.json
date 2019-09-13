@@ -20,11 +20,11 @@
     "Saleforce.ApiGateway": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/values",
+      "launchUrl": "s",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+      "applicationUrl": "https://localhost:9000;http://localhost:9000"
     },
     "Docker": {
       "commandName": "Docker",
