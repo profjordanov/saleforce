@@ -38,5 +38,24 @@ namespace Saleforce.Permissions.Api.Persistence.EntityFramework
             modelBuilder.Entity<UserRoles>().ToTable("UserRoles");
             modelBuilder.Entity<UserRoles>().Property(x => x.DataScope).IsRequired().HasColumnType("jsonb");
         }
+
+        internal static void ConfigureUserDeliveryApproval(this ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<DeliveryApproval>().ToTable("delivery_approvals");
+            modelBuilder
+                .Entity<DeliveryApproval>()
+                .HasOne(x => x.UserInfo)
+                .WithMany(ui => ui.DeliveryApprovals)
+                .HasForeignKey(approval => approval.UserInfo);
+        }
+
+        internal static void ConfigureDeliveryApproval(this ModelBuilder modelBuilder)
+        {
+            modelBuilder
+                .Entity<DeliveryApproval>()
+                .HasOne(x => x.Delivery)
+                .WithOne(delivery => delivery.DeliveryApproval)
+                .HasForeignKey<Delivery>(delivery => delivery.DeliveryApprovalId);
+        }
     }
 }

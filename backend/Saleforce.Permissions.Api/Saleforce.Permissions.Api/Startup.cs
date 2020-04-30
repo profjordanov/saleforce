@@ -28,11 +28,11 @@ namespace Saleforce.Permissions.Api
 
             services.AddHateoas();
 
-            services.AddEventSourcing(Configuration);
+            //services.AddEventSourcing(Configuration);
 
             services.AddMediatR(typeof(Startup).Assembly);
 
-            services.AddRepositories();
+            //services.AddRepositories();
 
             services.AddMemoryCache();
 

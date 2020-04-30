@@ -21,6 +21,13 @@ namespace Saleforce.Permissions.Api.Persistence.EntityFramework
 
         public DbSet<UserRoles> UserRoles { get; set; }
 
+        public DbSet<UserInfo> UserInfos { get; set; }
+
+        public DbSet<Delivery> Deliveries { get; set; }
+
+        public DbSet<DeliveryApproval> DeliveryApprovals { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
