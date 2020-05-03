@@ -42,11 +42,11 @@ namespace Saleforce.Permissions.Api.Persistence.EntityFramework
         internal static void ConfigureUserDeliveryApproval(this ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<DeliveryApproval>().ToTable("delivery_approvals");
-            modelBuilder
-                .Entity<DeliveryApproval>()
-                .HasOne(x => x.UserInfo)
-                .WithMany(ui => ui.DeliveryApprovals)
-                .HasForeignKey(approval => approval.UserInfo);
+            //modelBuilder
+            //    .Entity<DeliveryApproval>()
+            //    .HasOne(x => x.UserInfo)
+            //    .WithMany(ui => ui.DeliveryApprovals)
+            //    .HasForeignKey(approval => approval.UserInfo);
         }
 
         internal static void ConfigureDeliveryApproval(this ModelBuilder modelBuilder)

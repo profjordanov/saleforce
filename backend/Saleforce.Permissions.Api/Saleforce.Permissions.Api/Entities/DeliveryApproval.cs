@@ -9,8 +9,6 @@
         public Delivery Delivery { get; set; }
 
         public string UserInfoId { get; set; }
-
-        public UserInfo UserInfo { get; set; }
     }
 
     public enum DeliveryStatus

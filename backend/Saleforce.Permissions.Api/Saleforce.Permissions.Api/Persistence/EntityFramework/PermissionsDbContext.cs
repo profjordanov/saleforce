@@ -27,6 +27,8 @@ namespace Saleforce.Permissions.Api.Persistence.EntityFramework
 
         public DbSet<DeliveryApproval> DeliveryApprovals { get; set; }
 
+        public DbSet<Order> Orders { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -37,6 +39,8 @@ namespace Saleforce.Permissions.Api.Persistence.EntityFramework
             modelBuilder.ConfigureRolePermissionsPrimaryKey();
             modelBuilder.ConfigureUserPermissions();
             modelBuilder.ConfigureUserRoles();
+            modelBuilder.ConfigureUserDeliveryApproval();
+            modelBuilder.ConfigureDeliveryApproval();
         }
     }
 }
